@@ -130,4 +130,4 @@ class LightClipper extends CustomClipper<Path> {
   }
 }
 
-Color bgColor = const Color(0xFFFECE02);
+Color bgColor = Color.fromARGB(255, 2, 254, 132);
