@@ -190,7 +190,9 @@ class _FlowerAnimationState extends State<FlowerAnimation> with TickerProviderSt
             right: 0,
             child: Center(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, "/light_switch");
+                },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,

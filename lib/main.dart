@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'light_switch.dart';
+import 'package:flutter_logo_animation/light_switch.dart';
+import 'flower.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LightSwitch()
+      initialRoute: "/",
+    routes: {
+      "/":(context) => const FlowerAnimation(),
+      "/light_switch":(context) => const LightSwitch(),
+      
+    },
     );
   }
 }

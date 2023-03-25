@@ -93,7 +93,10 @@ class _LightSwitchState extends State<LightSwitch> {
               elevation: 0,
               centerTitle: false,
               backgroundColor: Colors.transparent,
-              leading: Icon(Icons.arrow_back, size: 35, color: containerHeight == 0 ? Colors.white : Colors.black,),
+              leading: IconButton(
+                color: containerHeight == 0 ? Colors.white : Colors.black, 
+                onPressed: () { Navigator.pop(context); }, 
+                icon: const Icon(Icons.arrow_back, size: 35,)),
               title: Text('Study Room', style: TextStyle(fontSize: 33, color: containerHeight == 0 ? Colors.white : Colors.black, fontWeight: FontWeight.w600),),
             ),
           )
